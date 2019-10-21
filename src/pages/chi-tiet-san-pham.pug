@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'chi tiết sản phẩm'
+	- var bodyClass = 'san-pham-page'
+
+block main
+	include ../components/_global/banner.pug
+	include ../components/_global/breadcrumb.pug
+	include ../components/chi-tiet-san-pham/index

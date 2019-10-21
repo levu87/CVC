@@ -1,0 +1,251 @@
+.cvc-footer
+    
+    position: relative
+    z-index: 2
+    footer
+        background: #ffffff
+        .top-footer
+            background: #ce1b22
+            width: 100%
+            padding: 35px 0
+            .wrapper
+            .text
+                display: flex
+                @media (max-width: 1025px)
+                    margin-bottom: 20px
+                .img 
+                    margin-right: 20px
+                img
+                    width: 60px
+                h2 
+                    font-size: 24px
+                    text-transform: uppercase
+                    color: #ffffff
+                p 
+                    font-size: 16px
+                    color: #ffffff
+            .box-input 
+                display: flex
+                align-items: center
+                input 
+                    width: 440px
+                    padding: 5px 20px
+                    border: none 
+                    border-radius: 25px 
+                    background: #af171d
+                    color: #ffffff
+                    font-size: 16px
+                    margin-right: 10px
+                ::-webkit-input-placeholder
+                    color: #ffffff
+                ::-ms-input-placeholder
+                    color: #ffffff
+
+                ::placeholder 
+                    color: #ffffff!important
+                button 
+                    padding: 5px 30px
+                    background: #ffffff
+                    border-radius: 25px
+                    font-weight: 600 
+                    font-size: 16px
+                    white-space: nowrap
+                    color: #ce1b22
+                    border: none
+                    em 
+                        margin-left: 10px
+        @media (max-width: 768px)
+            .logo-footer
+                margin-left: 20px
+        .chinh-sach
+            padding-bottom: 30px
+            .item
+                figure 
+                    .img 
+                        height: 135px
+                        width: auto
+                        img 
+                            width: 100%
+                            height: 100%
+                            object-fit: scale-down
+                    figcaption 
+                        text-align: center
+                        font-size: 15px 
+                        color: #666666
+                        h4 
+                            text-transform: uppercase
+        @media (max-width: 768px)
+            .chinh-sach
+                display: flex
+                flex-wrap: wrap
+                margin-left: 15px
+                margin-right: 15px
+                padding: 20px 0
+                .item
+                    -webkit-box-flex: 0
+                    flex: 0 0 100%
+                    max-width: 100%
+                    margin-bottom: 20px
+        .footer-bottom
+            border-bottom: 1px solid #eaeaea
+            border-top: 1px solid #eaeaea
+            .ft-col 
+                border-right: 1px solid #eaeaea
+                padding: 30px 
+            .ft-col,.ft-lienhe
+                h3
+                    font-size: 18px
+                    color: #333333
+                    margin-bottom: 10px
+                    text-transform: uppercase
+                    white-space: initial
+                    overflow: hidden
+                    text-overflow: ellipsis
+                    line-height: 25px
+                    -webkit-line-clamp: 2
+                    height: 50px
+                    display: -webkit-box
+                    -webkit-box-orient: vertical
+                .add
+                    display: flex
+                    em 
+                        color: #999999
+                        font-size: 20px
+                        margin-right: 5px
+                    p 
+                        font-size: 15px
+                        color: #666666
+                        line-height: 24px
+                        white-space: initial
+                .add:nth-child(6)
+                    p
+                        font-size: 12px
+                
+                ul 
+                    list-style: none
+                    padding: 0
+                    display: block
+                    a 
+                        color: #666666
+                        transition: all 0.3s ease-in-out
+                        line-height: 30px
+                        font-size: 16px
+                        &:hover
+                            color: #00a3e6
+                input[type="text"]
+                    width: 100%
+                    background: #ebebeb
+                    padding: 5px 15px
+                    border: none
+                    margin: 15px 0
+                    font-size: 16px
+                button
+                    width: 100%
+                    border: none
+                    background: #00a3e6
+                    color: #ffff
+                    padding: 5px 0
+                    font-size: 16px
+                    text-transform: uppercase
+            .ft-lienhe
+                padding: 30px 
+                p 
+                    font-size: 16px
+                li 
+                    margin-bottom: 15px
+                .social-icon
+                    display: flex
+                    // @media (max-width: 768px)
+                    //     justify-content: center
+
+                    a
+                        width: 45px
+                        height: 45px
+                        display: flex
+                        align-items: center 
+                        justify-content: center
+                        background: none
+                        border: 1px solid #ffffff
+                        border-radius: 50%
+                        margin-right: 20px
+                        color: #ffffff
+                        font-size: 22px
+                        
+                    .fb
+
+                        background: #3b569d
+                        &:hover
+                            transition: all .3s ease-in-out
+                            border: none
+                            em 
+                                color: #ffffff
+                    .ytb
+                        background: #f80000
+                        &:hover
+                            
+                            transition: all .3s ease-in-out
+                            border: none
+                            em 
+                                color: red
+                    .twt
+                        background: #00a3e6
+                        &:hover
+                            transition: all .3s ease-in-out
+                            border: none
+                            em 
+                                color: #ffffff
+            .ft-col
+                white-space: nowrap
+            @media (max-width: 1025px)
+                .ft-col
+                    border-right: none
+        // @media (max-width: 768px)
+        //     .footer-bottom
+        //         display: flex
+        //         flex-wrap: wrap
+        //         .ft-col 
+        //             flex: 0 0 50%
+        //             max-width: 50%
+        .copyright
+            .copyright 
+            padding: 20px 0
+            display: flex
+            .left 
+                p 
+                    color: #999999
+                    font-size: 14px
+                    font-weight: 300
+                    a
+                        color: #999999
+                        font-size: 14px
+                        text-decoration: none
+                        font-weight: 300
+                        &:hover 
+                            color: #f80000
+                            text-decoration: underline
+                            transition: all .3s ease-in-out
+
+            .right
+                margin-left: auto
+                list-style: none
+                li 
+                    display: inline-block
+                    margin-right: 20px
+                    a 
+                        color: #999999
+                        font-size: 14px
+                        font-weight: 300
+                    &:hover 
+                        a 
+                            color: #f80000
+                            transition: all .3s ease-in-out
+                li:first-child
+                    position: relative
+                    &:after 
+                        content: '|'
+                        display: block
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%)
+                        right: -15px
+                        color: #999999

@@ -1,0 +1,100 @@
+.hoi-dap
+    padding: 5rem 0
+    .main-title
+        text-align: center
+    .list-question
+        .list
+            padding-left: 0
+            .accordion-title
+                position: relative
+                margin-left: 1rem
+                font-size: 1.6rem
+                color: #666666
+                font-weight: 600
+                cursor: pointer
+                p
+                    padding-top: 2rem
+                    font-weight: 600
+                &:before
+                    position: absolute
+                    top: 2.85rem
+                    right: 0
+                    transform: translateY(-50%)
+                    transition: all .5s ease-in-out
+                    color: #999
+                    font-family: Linearicons-Free
+                    font-size: 12px
+                    content: "\e874"
+                
+                &:hover
+                    color: #0e76bc 
+                &.active
+                    color: #0e76bc
+                    &:before
+                        color: #0e76bc
+                    p 
+                        &:before 
+                            background: #0e76bc
+                    ol
+                        li
+                            padding-bottom: 1rem
+                            a,p
+                                color: #666666
+                                font-weight: 500!important
+                    &:before
+                        content: '\e873'
+                    p
+                        &:after     
+                p
+                    position: relative
+                    padding-bottom: 2rem
+                    &:before
+                        content: ''
+                        position: absolute
+                        width: calc(100% + 20px)
+                        height: .2rem
+                        background: #e6e6e6
+                        bottom: 0
+                        left: -20px
+                    span
+                        margin-left: 1.5rem
+                &:nth-child(10)
+                    span
+                        margin-left: .5rem
+                .accordion-content
+                    display: none
+                    padding: 2rem 2rem 1rem 0rem
+                    -webkit-transition: background-color 0.1s, color 0.1s
+                    li 
+                        list-style: none
+                        font-size: 1.6rem
+                        color: #666666
+                        position: relative
+                        font-weight: 500
+                        margin-bottom: 10px
+                        a
+                            color: #666666
+                            span,strong 
+                                display: flex
+                            strong 
+                                margin: 10px 0 5px 0
+            .accordion-title:last-child
+                p
+                    &:after
+                        content: ''
+                        position: absolute
+                        width: calc(100% + 20px)
+                        height: .2rem
+                        background: #e6e6e6
+                        bottom: 0
+                        left: -20px
+            .accordion-title:first-child
+                p
+                    &:after
+                        content: ''
+                        position: absolute
+                        width: calc(100% + 20px)
+                        height: .2rem
+                        background: #e6e6e6
+                        top: 0
+                        left: -20px

@@ -1,0 +1,377 @@
+.cvc-truyen-thong
+
+    h1  
+        text-align: center
+    nav 
+        text-align: center
+        margin-bottom: 30px
+        display: flex
+        justify-content: center
+        list-style: none
+        @media (max-width: 1025px)
+            display: none
+        li 
+            position: relative
+            margin: 20px
+            padding: 0 10px
+            &:before 
+                width: 0 
+                content: ''
+                height: 2px
+                background: #ec2224
+                position: absolute
+                left: 0 
+                bottom: -5px
+                transition: .2s all ease-in-out
+            &.active
+                color: #0e76bc
+                a
+                    color: #0e76bc
+                &:before 
+                    width: 100%
+                    background: #0e76bc
+            &:hover 
+                color: #ec2224
+                a
+                    color: #ec2224
+                &:before 
+                    width: 100%
+                    background: #ec2224
+            .nav_item
+                text-transform: uppercase
+                font-size: 18px
+                color: #333333
+                font-weight: 500
+                transition: all .2s ease-in-out
+    .mobile-nav
+        display: none
+        justify-content: space-between
+        background: #0e76bc
+        padding: 10px 20px
+        color: #fff
+        margin: 0 10px 20px 10px
+        @media (max-width: 1025px)
+            display: flex
+        h4 
+            text-transform: uppercase
+        .lnr:before
+            font-weight: 600!important
+            font-size: 14px
+    .list-truyen-thong-item 
+        .new-item
+            float: left
+            .info 
+                background: #f8f8f8
+                time 
+                    font-size: 12px
+                    color: #999
+                .title 
+                    a 
+                        font-size: 18px
+                        font-weight: 650 
+                        color: #333333
+                        transition: all .3s ease-in-out
+                        overflow: hidden
+                        text-overflow: ellipsis
+                        line-height: 24px
+                        -webkit-line-clamp: 2
+                        height: 48px
+                        display: -webkit-box
+                        -webkit-box-orient: vertical
+                .view-more
+                    a
+                        margin-top: auto
+                        padding: 5px 0
+                        border-bottom: 0
+                        font-size: 14px
+                        font-weight: 500
+                        color: #ec2224
+                        em 
+                            margin-left: 5px
+
+            .video 
+                display: block
+                position: relative
+                &:after 
+                    position: absolute
+                    content: ''
+                    top: 0 
+                    left: 0 
+                    width: 100%
+                    height: 100% 
+                    background: rgba(#000000,.5)
+                .button 
+                    z-index: 9
+                &:hover 
+                    &:after 
+                        display: none
+            &--1
+                position: relative
+                width: 50%
+                padding: 0 10px
+                @media (max-width: 768px)
+                    width: 100%
+                .title 
+                    a 
+                        font-size: 18px
+                        font-weight: 650 
+                        color: #ffffff
+                        transition: all .3s ease-in-out
+                &:hover
+                    .title 
+                        a 
+                            color: #fff100
+                    img
+                        transform: scale(1.15)
+                    
+                .video
+                    width: auto
+                    height: 390px
+                    overflow: hidden
+                    position: relative
+
+                    .button
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: all .3s ease-in-out
+
+                .title 
+                    background: rgba(51,51,51,.4)
+                    position: absolute
+                    width: calc(100% - 20px)
+                    bottom: 0 
+                    left: 10px
+                    padding: 15px 40px
+
+            &--2,&--3
+                width: 50%
+                display: flex
+                padding: 0 10px
+                @media (max-width: 768px)
+                    width: 100%
+                .video
+                    height: 185px
+                    width: auto 
+                    overflow: hidden
+                    position: relative
+                    .button
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        img 
+                            max-width: 50px
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: all .3s ease-in-out
+                .info
+                    flex: 0 0 50%
+                    max-width: 50%
+                    padding: 15px 20px
+                &:hover 
+                    img
+                        transform: scale(1.15)
+                    .title 
+                        a 
+                            color: #ec2224
+                .view-more
+                    margin-top: 10px
+            &--3 
+                margin-top: 20px
+            &--2 
+                @media (max-width: 768px)
+                    margin-top: 20px
+        .new-item:nth-child(n+4)
+            width: 33.3333%
+            margin-top: 20px
+            padding: 0 10px
+            @media (max-width: 768px)
+                width: 100%
+            .video
+                height: 230px
+                width: auto 
+                overflow: hidden
+                position: relative
+                .button
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    img 
+                        max-width: 50px
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    transition: all .3s ease-in-out
+            .info 
+                padding: 10px 20px
+            p 
+                overflow: hidden
+                text-overflow: ellipsis
+                line-height: 24px
+                -webkit-line-clamp: 2
+                height: 48px
+                display: -webkit-box
+                -webkit-box-orient: vertical
+                font-size: 16px
+                color: #333333
+                margin: 10px 0
+            &:hover 
+                img
+                    transform: scale(1.15)
+                .title 
+                    a 
+                        color: #ec2224
+    .list-news-item
+
+        .new-item
+            float: left
+            .info 
+                background: #f8f8f8
+                time 
+                    font-size: 12px
+                    color: #999
+                .title 
+                    a 
+                        font-size: 18px
+                        font-weight: 650 
+                        color: #333333
+                        transition: all .3s ease-in-out
+                        overflow: hidden
+                        text-overflow: ellipsis
+                        line-height: 24px
+                        -webkit-line-clamp: 2
+                        height: 48px
+                        display: -webkit-box
+                        -webkit-box-orient: vertical
+                .view-more
+                    a
+                        margin-top: auto
+                        padding: 5px 0
+                        border-bottom: 0
+                        font-size: 14px
+                        font-weight: 500
+                        color: #ec2224
+                        em 
+                            margin-left: 5px
+            &--1
+                position: relative
+                width: 50%
+                padding: 0 10px
+                @media (max-width: 768px)
+                    width: 100%
+                .title 
+                    a 
+                        font-size: 18px
+                        font-weight: 650 
+                        color: #ffffff
+                        transition: all .3s ease-in-out
+                &:hover
+                    .title 
+                        a 
+                            color: #fff100
+                    img
+                        transform: scale(1.15)
+                    
+                .img
+                    display: block
+                    cursor: pointer
+                    width: auto
+                    height: 390px
+                    overflow: hidden
+
+                    img 
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: all .3s ease-in-out
+
+                .title 
+                    background: rgba(51,51,51,.4)
+                    position: absolute
+                    width: calc(100% - 20px)
+                    bottom: 0 
+                    left: 10px
+                    padding: 15px 40px
+
+            &--2,&--3
+                width: 50%
+                display: flex
+                padding: 0 10px
+                @media (max-width: 768px)
+                    width: 100%
+                .img
+                    display: block
+                    cursor: pointer
+                    flex: 0 0 50%
+                    max-width: 50%
+                    height: 185px
+                    width: auto 
+                    overflow: hidden
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: all .3s ease-in-out
+                .info
+                    flex: 0 0 50%
+                    max-width: 50%
+                    padding: 15px 20px
+                &:hover 
+                    img
+                        transform: scale(1.15)
+                    .title 
+                        a 
+                            color: #ec2224
+                .view-more
+                    margin-top: 10px
+            &--3 
+                margin-top: 20px
+            &--2 
+                @media (max-width: 768px)
+                    margin-top: 20px
+        .new-item:nth-child(n+4)
+            width: 33.3333%
+            margin-top: 20px
+            padding: 0 10px
+            @media (max-width: 768px)
+                width: 100%
+            .img
+                display: block
+                cursor: pointer
+                height: 230px
+                width: auto 
+                overflow: hidden
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                    transition: all .3s ease-in-out
+            .info 
+                padding: 10px 20px
+            p 
+                overflow: hidden
+                text-overflow: ellipsis
+                line-height: 24px
+                -webkit-line-clamp: 2
+                height: 48px
+                display: -webkit-box
+                -webkit-box-orient: vertical
+                font-size: 16px
+                color: #333333
+                margin: 10px 0
+            &:hover 
+                img
+                    transform: scale(1.15)
+                .title 
+                    a 
+                        color: #ec2224

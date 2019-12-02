@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="./css/core.min.css">
 		<link rel="stylesheet" href="./css/main.min.css">
 		<title>chi tiết sản phẩm</title>
-		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;display=swap&amp;subset=vietnamese" rel="stylesheet">
 	</head>
 	<body class="san-pham-page">
 		<header>
@@ -32,7 +32,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="language-wrapper">
+						<div class="language-wrapper Module-210">
 							<div class="language-active">
 								<p>VN</p><em class="mdi mdi-chevron-down"></em>
 							</div>
@@ -45,18 +45,18 @@
 				<div class="container">
 					<div class="row no-gutters">
 						<div class="logo-wrapper">
-							<div class="logo"><a href="/"><img src="./img/logo.png" alt=""></a></div>
+							<div class="logo"><a class="logo-big" href="/"><img src="./img/logo.png" alt=""></a></div>
 						</div>
 						<div class="main-menu">
 							<ul>
 								<li><a href="/">Trang chủ</a></li>
-								<li><a href="gioithieu.html">Giới thiệu</a></li>
-								<li><a href="sanpham.html">Sản phẩm</a></li>
-								<li><a href="duan.html">Dự án</a></li>
-								<li><a href="truyenthong.html">Tin tức - sự kiện </a></li>
-								<li><a href="hotro-faq.html">Tuyển dụng</a></li>
-								<li><a href="lienhe.html">Truyền thông</a></li>
-								<li><a href="lienhe.html">Liên hệ</a></li>
+								<li><a href="./gioi-thieu.html">Giới thiệu</a></li>
+								<li><a href="./san-pham.html">Sản phẩm</a></li>
+								<li><a href="./du-an.html">Dự án</a></li>
+								<li><a href="./tin-tuc.html">Tin tức - sự kiện </a></li>
+								<li><a href="./tuyen-dung.html">Tuyển dụng</a></li>
+								<li><a href="./truyen-thong.html">Truyền thông</a></li>
+								<li><a href="./lien-he.html">Liên hệ</a></li>
 							</ul>
 						</div>
 						<div class="mobile-toggle">
@@ -79,10 +79,12 @@
 				</div>
 			</div>
 			<div class="Module breadcrumb-wrapper">
-				<ol class="breadcrumb">
-					<li><a class="itemcrumb" href="#"><span>Home</span></a></li>
-					<li><a class="itemcrumb active" href="#"><span>Brand story</span></a></li>
-				</ol>
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a class="itemcrumb" href="#"><span>Home</span></a></li>
+						<li><a class="itemcrumb active" href="#"><span>Sản phẩm</span></a></li>
+					</ol>
+				</div>
 			</div>
 			<section class="sanpham-wrapper pd-60">
 				<div class="container product-detail">
@@ -134,35 +136,49 @@
 											<td>170M3819</td>
 										</tr>
 										<tr>
-											<th></th>
+											<th>Part number</th>
 											<td>Part no</td>
-										</tr>
-										<tr>
-											<th>Hãng sản xuất</th>
-											<td>Bussmann ( button dẫn link sang trang thương hiệu)</td>
 										</tr>
 										<tr>
 											<th>Xuất xứ</th>
 											<td>China</td>
 										</tr>
-										<tr class="contact">
-											<th>Liên hệ</th>
-											<td> 
-												<p><a href="tel:02873000296"> <span class="mdi mdi-phone"></span><span>(028) 7300 0296</span></a></p>
-												<p><a href="mailto:info@datvinhtien.vn"> <span class="mdi mdi-email"></span><span>info@datvinhtien.vn</span></a></p>
-											</td>
+										<tr>
+											<th>Bảo hành </th>
+											<td>24 tháng</td>
 										</tr>
 									</tbody>
 								</table>
+								<div class="brand">
+									<table>
+										<tbody>
+											<tr>
+												<th>Hãng sản xuất</th>
+												<td> <a class="brand" href="./chi-tiet-thuong-hieu.html">Bussmann </a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
+							<div class="contact"><a class="button button--1" href="">Liên hệ</a><a class="button button--2" href="">Catalogue 170M3819</a></div>
 							<div class="social"></div>
 						</div>
 						<div class="col-12">
 							<div class="product-info">
-								<div class="product-detail-title">
-									<h5>Thông tin sản phẩm</h5>
+								<div class="product-detail-title"> 
+									<ul class="detail-navigation"> 
+										<li class="tab-link current" data-tab="tab-1">Thông tin sản phẩm </li>
+										<li class="tab-link" data-tab="tab-2">Thông tin kỹ thuật</li>
+										<li class="tab-link" data-tab="tab-3">Thông tin khác</li>
+									</ul>
 								</div>
-								<div class="product-attributes">
+								<div class="product-attributes noi-dung" id="tab-3">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatum, deserunt quos quisquam illo cupiditate repellendus dolores cum recusandae saepe non, optio fugiat ex dicta tempore illum commodi odit pariatur!</p>
+								</div>
+								<div class="product-attributes noi-dung" id="tab-2">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, voluptatum, deserunt quos quisquam illo cupiditate repellendus dolores cum recusandae saepe non</p>
+								</div>
+								<div class="product-attributes noi-dung current" id="tab-1">
 									<table>
 										<tbody>
 											<tr> 
@@ -182,28 +198,20 @@
 												<td>200kA </td>
 											</tr>
 											<tr>
-												<th>Loại </th>
-												<td>cầu chì cắt nhanh (aR) - High speed fuse  </td>
-											</tr>
-											<tr> 
-												<th>Tiêu chuẩn </th>
-												<td>IEC 60269-4 </td>
+												<th>Kích thước</th>
+												<td>NH1 </td>
 											</tr>
 											<tr> 
 												<th>Loại</th>
-												<td>Loại cầu chì square body </td>
+												<td>cầu chì cắt nhanh (aR) - High speed fuse </td>
 											</tr>
 											<tr> 
-												<th>DIN 43 620  DIN type T - Indicator for Micro   </th>
-												<td>.</td>
+												<th>Tiêu chuẩn  </th>
+												<td>IEC 60269-4</td>
 											</tr>
 											<tr> 
-												<th>Bảo vệ biến tần, UPS, bộ nguồn...  </th>
-												<td>.</td>
-											</tr>
-											<tr> 
-												<th>Size </th>
-												<td>NH1</td>
+												<th>Ứng dụng</th>
+												<td>Bảo vệ biến tần, UPS, bộ nguồn... </td>
 											</tr>
 										</tbody>
 									</table>
@@ -265,14 +273,14 @@
 				<div class="top-footer">
 					<div class="container wrapper">
 						<div class="row">
-							<div class="col-lg-5 text"> 
+							<div class="col-lg-6 text"> 
 								<div class="img"><img src="./img/dk.png" alt=""></div>
 								<div class="content">
 									<h2>Đăng ký nhận bản tin</h2>
 									<p>Nhận những thông tin về sản phẩm mới, sự kiện và khuyến mãi</p>
 								</div>
 							</div>
-							<div class="col-lg-7 box-input"> 
+							<div class="col-lg-6 box-input"> 
 								<input type="text" placeholder="Nhập email...">
 								<button>Đăng ký<em class="mdi mdi-arrow-right"></em></button>
 							</div>
@@ -327,14 +335,14 @@
 								<div class="add"> 
 									<p>220/71 Lê Văn Sỹ, Phường 14,  Quận 3, TP Hồ Chí Minh</p>
 								</div>
-								<div class="add"><em class="mdi mdi-map-marker"></em>
-									<p>Lô 33, KCN Tam Phước, Tp. Biên Hòa, Tỉnh Đồng Nai </p>
-								</div>
 								<div class="add"> <em class="mdi mdi-phone"></em>
-									<p>84 251 3511179 </p>
+									<p>028 3527 0061 - 028 3526 0049</p>
 								</div>
 								<div class="add"><em class="mdi mdi-fax"></em>
-									<p>84 251 3512005</p>
+									<p>028 3526 0064</p>
+								</div>
+								<div class="add"><em class="mdi mdi-email"></em>
+									<p>info@cvcvina.com</p>
 								</div>
 								<div class="add"> 
 									<p>Số ĐKKD: 0310460102 do Sở Kế Hoạch và Đầu Tư Tp. Hồ Chí Minh cấp ngày 18/11/2010</p>
@@ -343,21 +351,22 @@
 							<div class="col-lg-3 col-sm-6 ft-col">
 								<h3>hỗ trợ khách hàng</h3>
 								<ul>
-									<li><a href="">Nhóm Thiết bị chiếu sáng</a></li>
-									<li><a href="">Nhóm Công tắc ổ cắm</a></li>
-									<li><a href="">Nhóm Ống luồn</a></li>
-									<li><a href="">Nhóm Thiết bị nối dây</a></li>
-									<li><a href="">Nhóm Thiết bị công nghiệp </a></li>
+									<li><a href="">Hướng dẫn đặt hàng </a></li>
+									<li><a href="">Phương thức vận chuyển</a></li>
+									<li><a href="">Chính sách đổi trả</a></li>
+									<li><a href="">Chính sách bảo mật thanh toán</a></li>
+									<li><a href="">Chính sách bảo mật thông tin</a></li>
 								</ul>
 							</div>
 							<div class="col-lg-3 col-sm-6 ft-col">
 								<h3>liên kết nhanh</h3>
 								<ul>
-									<li><a href="">Tài liệu hỗ trợ</a></li>
-									<li><a href="">Giới thiệu</a></li>
-									<li><a href="">Dịch vụ - Giải pháp</a></li>
+									<li><a href="">Tài liệu </a></li>
+									<li><a href="">Thương hiệu</a></li>
+									<li><a href="">Câu hỏi thường gặp </a></li>
 									<li><a href="">Tin tức - Sự kiện</a></li>
-									<li><a href="">Liên hệ</a></li>
+									<li><a href="">Truyền thông</a></li>
+									<li><a href="">Tuyển dụng </a></li>
 								</ul>
 							</div>
 							<div class="col-lg-3 col-sm-6 ft-lienhe">

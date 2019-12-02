@@ -1,0 +1,70 @@
+.chitiet-tintuc 
+    .contain
+        h2 
+            font-size: 36px 
+            color: #0e76bc
+            font-weight: 500
+        time 
+            color: #999999
+        p 
+            padding: 15px 0
+        
+        img 
+            width: 100%
+        strong 
+            margin: 0 5px
+    .other 
+        .head 
+            margin-bottom: 30px
+            width: 100% 
+            background: #0e76bc
+            h2 
+                padding: 10px 20px
+                text-transform: uppercase
+                font-size: 20px
+                color: #ffffff
+        .list-item 
+            .item:not(:last-child)
+                border-bottom: 1px solid #dfdfdf
+                padding-bottom: 20px
+            .item 
+                margin-bottom: 20px
+                display: flex
+                
+                
+                .img 
+                    flex: 0 0 50%
+                    max-width: 50%
+                    height: auto
+                    overflow: hidden
+                    img 
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        transition: .2s all ease-in-out
+                .content 
+                    flex: 0 0 50%
+                    max-width: 50%
+                    padding: 10px
+                    time 
+                        color: #999999
+                        font-size: 14px
+                    a 
+                        h4
+                            color: #333333
+                            font-size: 16px 
+                            display: block
+                            font-weight: initial
+                            display: -webkit-box
+                            -webkit-line-clamp: 3
+                            -webkit-box-orient: vertical
+                            overflow: hidden
+                            text-overflow: ellipsis
+                            transition: all .3s ease-in-out
+                            font-weight: 700
+                &:hover 
+                    img 
+                        transform: scale(1.15)
+                    a 
+                        h4
+                            color: #0e76bc

@@ -11,6 +11,10 @@
             .wrapper
             .text
                 display: flex
+                align-items: center
+                .ModuleContent
+                    display: flex
+                    align-items: center
                 @media (max-width: 1025px)
                     margin-bottom: 20px
                 .img 
@@ -24,9 +28,13 @@
                 p 
                     font-size: 16px
                     color: #ffffff
-            .box-input 
+            .box-input,.subscribefrm
                 display: flex
                 align-items: center
+                @media (max-width: 768px)
+                    justify-content: center
+                    input 
+                        width: 100%!important
                 input 
                     width: 440px
                     padding: 5px 20px
@@ -54,6 +62,12 @@
                     border: none
                     em 
                         margin-left: 10px
+                @media (max-width: 768px)
+                    flex-wrap: wrap
+                    input 
+                        flex: 0 0 100%
+                    button 
+                        margin-top: 10px
         @media (max-width: 768px)
             .logo-footer
                 margin-left: 20px
@@ -106,6 +120,7 @@
                     height: 50px
                     display: -webkit-box
                     -webkit-box-orient: vertical
+                    font-weight: 600
                 .add
                     display: flex
                     em 
@@ -131,7 +146,7 @@
                         line-height: 30px
                         font-size: 16px
                         &:hover
-                            color: #00a3e6
+                            color: #ce1b22
                 input[type="text"]
                     width: 100%
                     background: #ebebeb
@@ -177,23 +192,23 @@
                         &:hover
                             transition: all .3s ease-in-out
                             border: none
-                            em 
-                                color: #ffffff
+                        em 
+                            color: #ffffff
                     .ytb
                         background: #f80000
                         &:hover
                             
                             transition: all .3s ease-in-out
                             border: none
-                            em 
-                                color: red
+                        em 
+                            color: #ffffff
                     .twt
                         background: #00a3e6
                         &:hover
                             transition: all .3s ease-in-out
                             border: none
-                            em 
-                                color: #ffffff
+                        em 
+                            color: #ffffff
             .ft-col
                 white-space: nowrap
             @media (max-width: 1025px)

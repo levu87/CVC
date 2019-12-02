@@ -1,0 +1,105 @@
+.home-why 
+    padding: 7rem 0
+    h1 
+        text-align: center 
+        color: #ffffff
+        margin-bottom: 5rem!important
+    .list-item 
+        display: grid
+        grid-template-rows: 22.3rem 22.3rem
+        grid-template-columns: 21.5rem 21.5rem
+        grid-gap: 3rem
+        @media (max-width: 768px)
+            display: flex
+            flex-wrap: wrap
+            max-width: 100%
+            flex: 0 0 100%
+            .wrapper
+                flex: 0 0 50%
+                max-width: 50%
+                padding: 10px!important
+        .item 
+            width: 100%
+            height: 100%
+            text-align: center
+            background: #ffffff
+            display: flex 
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 2rem
+            span 
+                font-size: 1.8rem 
+                color: #333333
+                font-weight: 300
+                text-transform: uppercase
+
+            .img
+                height: 80px
+                width: 80px
+                background: #ce1b22
+                border-radius: 50%
+                margin-bottom: 2rem
+                img 
+                    width: 100%
+                    height: 100%
+                    object-fit: scale-down
+.box-bottom 
+    .list 
+        display: flex 
+        justify-content: space-between
+        flex-wrap: wrap
+        flex: 0 0 100%
+        max-width: 100%
+        .item 
+            display: flex 
+            align-items: center
+            flex: 0 0 20%
+            max-width: 20%
+            padding: 5rem 1.5rem
+            @media (max-width: 1200px)
+                flex: 0 0 25%
+                max-width: 25%
+            @media (max-width: 1025px)
+                flex: 0 0 50%
+                max-width: 50%
+            @media (max-width: 768px)
+                flex-direction: column
+                padding: 2.5rem 1.5rem
+                .small 
+                    text-align: center
+            .big 
+                margin-right: 3rem
+                position: relative
+                .number
+                    font-size: 5rem 
+                    color: #ffffff
+                    font-weight: 700
+                    font-weight: 700
+                .plus
+                    color: #ffffff
+                    position: absolute 
+                    top: 0
+                    font-size: 3rem
+                    right: -1.5rem
+            .small 
+                p 
+                    font-size: 1.6rem
+                    color: #e3e3e3
+                    
+        .item:not(:last-child)
+            position: relative
+            &:after 
+                content: ''
+                background: #e3e3e37a
+
+
+                display: block
+                width: 1px
+                height: 7rem 
+                position: absolute 
+                right: 0rem 
+                top: 50%
+                transform: translateY(-50%)
+                @media (max-width: 1200px)
+                    display: none!important

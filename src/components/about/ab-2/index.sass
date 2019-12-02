@@ -1,0 +1,99 @@
+.history-section 
+    padding: 8rem 0
+    background: #ffffff
+    h1
+        margin-bottom: 2rem
+        color: #ce1b22
+        font-size: 3.6rem
+        font-weight: 400
+        line-height: 1
+        text-transform: uppercase
+        text-align: center
+    .tab-img 
+        display: none 
+        &.active
+            display: block
+        img
+            width: 100%
+    .tab-navigation
+        margin-top: 2rem
+        .swiper-container 
+            position: relative
+        .swiper-slide-active
+            h4 
+                color: #e6212c
+            &:after 
+                background: #e6212c
+        .swiper-slide:nth-child(even)
+            .title 
+                display: none!important
+        .swiper-slide:nth-child(odd)
+            .date
+                p 
+                    display: none!important
+        .swiper-slide
+            display: flex
+            flex-wrap: wrap
+            .title 
+                height: 33remrem 
+                width: 100%
+                flex: 0 0 100%
+                p 
+                    font-weight: 300
+
+            .date
+                height: 33rem
+                flex: 0 0 100%
+                width: 100%
+                position: relative
+                display: flex
+                align-items: center
+                justify-content: center
+                border-bottom: 4px solid #e6212c
+                margin-bottom: 4rem
+                &:after
+                    content: ''
+                    position: absolute
+                    z-index: 11
+                    bottom: -1.2rem
+                    width: 2rem
+                    height: 2rem 
+                    background: #e6212c
+                    transform: rotate(-45deg)
+                h4 
+                    font-size: 2rem
+                    font-weight: 600
+                    color: #e6212c
+                    z-index: 11
+                    line-height: 1
+                    position: absolute
+                    bottom: 2rem
+                    transform: translateY(-50%)
+                p 
+                    font-size: 1.6rem 
+                    color: #666666
+                    font-weight: 300
+                &:hover,&.active 
+                    h4 
+                        color: #ac2021
+                    &:after 
+                        background: #ac2021
+        .history-btn-next,.history-btn-prev
+            position: absolute 
+            top: calc(50% - 2rem)
+            
+            z-index: 99
+            outline: none
+            em 
+                font-size: 2rem 
+                color: #333333
+            .lnr:before 
+                font-weight: 600!important
+            &:hover 
+                em 
+                    color: #ac2021
+        .history-btn-next 
+            right: 0
+        .history-btn-prev
+            left: 0
+   

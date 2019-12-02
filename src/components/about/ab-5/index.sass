@@ -1,0 +1,66 @@
+.doitac
+    padding: 60px 0
+    position: relative
+    z-index: 2
+    
+    h1
+        text-align: center
+        color: #333333
+            
+    .slider
+        .doitac-slider
+            position: relative
+            .swiper2-btn-next
+                margin-left: 1rem
+                position: absolute
+                top: 3rem
+                right: 3rem
+            .swiper2-btn-prev
+                margin-right: 2rem
+                position: absolute
+                top: 3rem
+                right: 3rem
+        .khachhang-slider
+            position: relative
+            .swiper-btn-next
+                position: absolute
+                top: 3rem
+                right: 3rem
+            .swiper-btn-prev
+                margin-right: 2rem
+                position: absolute
+                top: 3rem
+                right: 3rem
+        h4 
+            padding: 3rem 0
+            position: relative
+            font-size: 2.4rem
+            &:after
+                position: absolute
+                bottom: 2rem
+                content: ''
+                display: block
+                width: 100%
+                height: 1px
+                background: #ebebeb
+        .item
+            background: #ffffff
+            width: 15rem
+            height: 7rem
+            display: flex
+            justify-content: center
+            align-items: center
+@media (max-width: 768px)
+    .doitac
+        padding: 4rem
+        .slider
+            .doitac-slider
+                flex: 0 0 100%
+                max-width: 100%
+            .khachhang-slider
+                flex: 0 0 100%
+                max-width: 100%
+            .doitac-slider,.khachhang-slider
+                .swiper-slide
+                    display: flex
+                    justify-content: center

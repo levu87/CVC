@@ -1,4 +1,6 @@
 .thuong-hieu
+    h1 
+        font-weight: 700
     .img 
         height: 400px
         width: 100%
@@ -84,3 +86,68 @@
                     .swiper-slide
                         display: flex
                         justify-content: center
+.nikko-brand
+    padding: 60px 0
+    .main-title
+        text-align: center
+        font-weight: 700!important
+    .main-wrapper
+        border-radius: 5px
+        background-color: rgb(255, 255, 255)
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.05)
+        .heading-wrapper
+            padding: 10px 20px
+            // border-bottom: 1px solid #f2f2f2
+            h2
+                margin-bottom: 0
+                
+        .brand-list-wrapper
+            // margin: 0 -4px
+            display: flex
+            flex-wrap: wrap
+            border-top: 1px solid #f2f2f2
+            border-left: 1px solid #f2f2f2
+            // justify-content: center
+            .item
+                // margin: -.5px
+                transition: .4s ease-in-out all
+                text-align: center
+                flex: 0 0 50%
+                border-right: 1px solid #f2f2f2
+                border-bottom: 1px solid #f2f2f2
+                .ic
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    img
+                        max-height: 150px
+                a
+                    display: block
+                    padding: 20px
+                p
+                    font-size: 16px
+                    font-weight: 600
+                &:hover
+                    color: #f90707
+                    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15)
+
+    @media(min-width: 576px)
+        .main-wrapper
+            .brand-list-wrapper
+                .item
+                    flex: 0 0 33.3333%
+    @media(min-width: 768px)
+        .main-wrapper
+            .brand-list-wrapper
+                .item
+                    flex: 0 0 25%
+    @media(min-width: 1025px)
+        .main-wrapper
+            .brand-list-wrapper
+                .item
+                    flex: 0 0 20%
+    @media(min-width: 1200px)
+        .main-wrapper
+            .brand-list-wrapper
+                .item
+                    flex: 0 0 16.666667%

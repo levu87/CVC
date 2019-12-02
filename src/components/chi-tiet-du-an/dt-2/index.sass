@@ -2,7 +2,8 @@
     .catelogy
         .used-products
             margin-top: 30px
-            border: 1px solid #e6e6e6
+            // border: 1px solid #e6e6e6
+            
             h3
                 font-size: 16px
                 color:  #333333
@@ -11,12 +12,11 @@
                 padding: 10px 20px
                 
             .box
-                display: flex
+                margin-top: 20px
                 .swiper-container
                     width: 100%
                     .swiper-slide
-                        padding: 20px 10px
-                        flex: 0 0 50%
+                    
                         .product-item 
                             margin: 0
                         .title
@@ -24,21 +24,10 @@
                         .info-hover
                             h4 
                                 font-size: 16px!important
-@media(min-width: 768px)
-    .cvc-project-detail-2
-        .catelogy
-            .used-products
-                .box
-                    margin: 0 40px
-                    .swiper-container
-                        .swiper-slide
-                            flex: 0 0 33.333333333%               
-@media(min-width: 1025px)
-    .cvc-project-detail-2
-        .catelogy
-            .used-products
-                .box
-                    margin: 0 40px
-                    .swiper-container
-                        .swiper-slide
-                            flex: 0 0 16.66666667%
+                .product-item 
+                    @media (max-width: 768px)
+                        .imgbox
+                            height: 230px
+                    @media (max-width: 576px)
+                        .imgbox
+                            height: 320px

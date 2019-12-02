@@ -12,6 +12,7 @@
 		"bower_components/fancybox/dist/jquery.fancybox.js",
 		"bower_components/swiper/dist/js/swiper.min.js",
 		"src/_plugins/mapping.js",
+		"bower_components/jssocials/dist/jssocials.min.js",
 		"src/_plugins/mapping-listener.js"
 	],
 	"css": [
@@ -20,6 +21,7 @@
 		"src/_plugins/grid.css",
 		"bower_components/paginationjs/dist/pagination.css",
 		"bower_components/swiper/dist/css/swiper.min.css",
+		"bower_components/jssocials/dist/jssocials-theme-flat.css",
 		"bower_components/aos/dist/aos.css"
 	]
 }

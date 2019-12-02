@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Tin tức chi tiết'
+	- var bodyClass = 'Tin-tuc-su-kien-page'
+
+block main
+	include ../components/_global/banner.pug
+	include ../components/tin-tuc/breadcrumb.pug
+	include ../components/chi-tiet-tin-tuc/index

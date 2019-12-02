@@ -1,0 +1,28 @@
+section.dq-recruitment-1.thuong-hieu-ct
+    .container
+        .main-content
+            .row
+                .col
+                    //- h2.main-title Môi trường làm việc
+            .row.item
+                .col-md-6
+                    .content
+                        h3 BUSSMANN 
+                        p Cooper Industries là nhà sản xuất các sản phẩm điện tử trên khắp nước Mỹ với doanh thu năm 2011 là 5,4 tỷ USD
+                        p Được thành lập vào năm 1833, công ty đã có bảy bộ phận  bao gồm: Cầu chì Bussmann; Cầu chì điện tử; Thiết bị điện chống cháy nổ Crouse Hinds-CEAG; Thiết bị chiếu sáng Halo và Metalux; Sản phẩm năng lượng Kyle và McGraw-Edison. Với hàng loạt các sản phẩm này, Cooper xứng đáng với xu hướng phát triển lâu dài bao gồm cả xây dựng cơ sở hạ tầng toàn cầu, nhu cầu phải cải thiện sự tin cậy và năng suất của lưới điện, nhu cầu về các sản phẩm tiết kiệm năng lượng cao hơn và nhu cầu cải thiện an toàn điện. Vào năm 2011, 59% của tổng doanh thu bán ra cho khách hàng trong công nghiệp,  40% tổng doanh thu là bán cho các khách hàng bên ngoài nước Mỹ. Năm 2011 Cooper có các cơ sở sản xuất tại 23 quốc gia.
+
+                .col-md-6
+                    .image
+                        img(src="./img/thuong-hieu.jpg", alt="")
+        .other-wrapper
+            h4 Các thương hiệu khác
+            .other-list.brand-list-wrapper
+                .swiper-container
+                    .swiper-wrapper
+                        -for(i=1;i<7;i++)
+                            .swiper-slide
+                                .item
+                                    a(href='/thuong-hieu-ct.html')
+                                        figure
+                                            .ic(style='height: 150px;')
+                                                img(src='./img/pnr/'+ i +'.png', alt='')

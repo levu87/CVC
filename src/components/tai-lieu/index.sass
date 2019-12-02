@@ -1,0 +1,74 @@
+.document-page 
+    .hoi-dap 
+        padding-bottom: 0!important
+.hoi-dap
+    padding: 5rem 
+    .main-title
+        text-align: center
+    .table-responsive
+        overflow: auto
+        white-space: nowrap
+        @media (max-width: 1200px)
+            overflow-x: auto
+        .table 
+            width: 100%
+            thead
+                background: rgba(14,118, 188,.1)
+                border-bottom: 2px solid #1a77b9!important
+                border: 1px solid #e1e1e1
+                border-collapse: collapse
+                tr 
+                    th
+                        padding: 15px 20px
+                        text-align: center
+                        color: #1a77b9
+                        font-size: 16px
+                        font-weight: normal
+                        text-transform: uppercase
+                        border-top: none
+                    .title 
+                        text-align: left
+            tbody 
+                tr 
+                    transition: all .4s ease-in-out
+                    border: 1px solid #e1e1e1
+                    border-collapse: collapse
+                    td 
+                        font-size: 1.6rem
+                        padding: 15px 20px
+                        text-align: center
+                        
+                        a 
+                            color: #333333
+                    td:last-child
+                        a
+                           
+                            transition: all .4s ease-in-out
+                    .mdi-file-outline
+                        color: #1a77b9 
+                    .lnr-download
+                        color: #ec2224
+                    .title
+                        text-align: left
+                        font-weight: 600
+                        color: #1a77b9
+                    &:hover 
+                        background: #1a77b9 
+                        border: 1px solid #1a77b9 
+                        td
+                            color: #ffffff
+                            .mdi-file-outline
+                                color: #ffffff
+                tr:first-child
+                    border-top: none
+    .side-menu
+        .side-menu-list 
+            padding: 0
+        .side-menu-item
+            span 
+                display: none
+            h3 
+                padding: 15px 20px
+.document-page 
+    .modulepager
+        padding-bottom: 5rem

@@ -1,0 +1,65 @@
+.Module-257
+    .about-nav 
+        background: #1173b8
+        position: relative
+        display: block!important
+        &.fixed
+            position: fixed
+            width: 100%
+            background: #1173b8
+            top: 70px
+            z-index: 9
+        .menu-slide
+            position: relative
+            z-index: 99
+        .swiper-container
+            .swiper-wrapper 
+                .swiper-slide
+                    width: auto!important
+                    li 
+                        padding: 1rem 2.5rem
+                        display: inline-block
+                        transition: .2s
+                        white-space: nowrap
+                        a 
+                            color: #ffffff!important
+                            font-size: 1.6rem 
+                            text-transform: capitalize
+                            white-space: nowrap
+                        &:hover,&.active 
+                            background: #ce1b22
+        .nav-wrapper
+            width: 100%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            z-index: 9
+            display: flex
+            justify-content: center
+        .swiper-navigation
+            width: 100%
+            position: relative
+            .left-menu,.right-menu
+                width: 4rem
+                height: 4rem
+                display: flex
+                border: none
+                outline: none
+                display: flex
+                justify-content: center
+                align-items: center
+                em 
+                    font-size: 4rem
+                    color: #ffffff
+            .right-menu 
+                position: absolute
+                right: -4rem
+                top: 50%
+                transform: translateY(-50%)
+            .left-menu 
+                position: absolute
+                left: -4rem
+                top: 50%
+                transform: translateY(-50%)
+

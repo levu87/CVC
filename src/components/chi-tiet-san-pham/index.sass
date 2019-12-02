@@ -64,7 +64,7 @@
 			.imgbox
 				border: 1px solid map-get($mau, main-r)
 	.brief-content
-		font-size: 14px
+		font-size: 16px
 		font-weight: 400
 		padding-bottom: 16px
 		color: #333333
@@ -72,7 +72,7 @@
 		table
 			width: 100%
 			color: #333333
-			font-size: 14px
+			font-size: 16px
 			tr
 				border-bottom: 1px dashed #e1e1e1
 				&:first-child
@@ -81,13 +81,47 @@
 					height: 40px
 				th
 					font-weight: 600
-				&.contact
-					p
-						font-size: 18px
-						font-weight: 600
-						color: map-get($mau, main-r)
-						.mdi
-							margin-right: 8px
+					width: 50%
+				.brand
+					// margin-left: 20px
+					padding: 5px 10px
+					font-weight: 500
+					white-space: nowrap
+					font-size: 14px
+					background: #ec2224
+					color: #ffffff
+					&:hover 
+						border-radius: 25px
+	.contact
+		display: flex
+		align-items: center
+		margin: 20px 0
+		.button
+			display: flex
+			margin-right: 30px
+			padding: 5px 30px
+			text-transform: uppercase
+			font-weight: 500
+			white-space: nowrap
+			font-size: 16px
+			&--1 
+				border: 1px solid #ec2224
+				color: #ec2224
+				&:hover 
+	
+					background: #ec2224 
+					color: #ffffff
+
+			&--2
+				border: 1px solid #0e76bc
+				color: #0e76bc
+		
+				&:hover
+					background: #0e76bc
+					color: #ffffff
+				
+					
+						
 	.product-detail-title
 		border-bottom: 1px solid #e3e3e3
 		padding-bottom: 8px
@@ -101,8 +135,8 @@
 			position: relative
 	.product-info
 		margin-top: 25px
-		font-size: 14px
-		max-height: 260px
+		font-size: 16px
+		// height: 260px
 		overflow: hidden
 		position: relative
 		&:before
@@ -115,21 +149,43 @@
 			background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.25) 100%)
 			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1)
 		&.show
-			max-height: unset
+			height: auto
 			&:before
 				content: none
-		h5
-			&:after
-				position: absolute
-				width: 100%
-				height: 1px
-				left: 0
-				background: map-get($mau, main-b)
-				content: ''
-				bottom: -8px
+		ul 
+			list-style: none 
+			display: flex
+			li
+				margin-right: 20px
+				font-size: 16px
+				font-weight: 600
+				color: map-get($mau, main-b)
+				text-transform: uppercase
+				position: relative
+				&:after
+					position: absolute
+					width: 0
+					transition: .2s all
+					height: 1px
+					left: 0
+					background: map-get($mau, main-b)
+					content: ''
+					bottom: -8px
+				&:hover,&.current
+					&:after 
+						width: 100%
+		
+		.noi-dung
+			display: none
+			&.current
+				display: block
+			table 
+				tr 
+					th 
+						width: 25%
 		.btn-wrapper
 			text-align: center
-			margin-top: -260px
+			margin-top: -160px
 			position: relative
 		// .full-content
 			// max-height: 260px
@@ -148,6 +204,7 @@
 			// 	max-height: unset
 			// 	&:before
 			// 		content: none
+	
 	.product-used-by-projects
 		margin-top: 50px
 		position: relative
@@ -180,6 +237,7 @@
 		margin-top: 50px
 		position: relative
 		.product-others-nav
+			
 			span
 				margin: 0 8px
 				font-size: 24px
@@ -204,3 +262,14 @@
 					right: 0
 				.lnr-arrow-left
 					left: 0
+@media (max-width: 768px)
+	.product-others-nav
+		position: absolute
+		bottom: 10px
+		left: 50%
+		transform: translateX(-50%)
+		width: 100px
+.product-detail-page
+	.col-left
+		max-width: 100%
+		flex: 0 0 100%

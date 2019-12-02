@@ -2,23 +2,6 @@
 	padding: 0
 	margin: 0
 	box-sizing: inherit
-html
-	font-family: 'Nunito Sans', sans-serif
-	background-color: #ffff
-	text-rendering: optimizeLegibility
-	box-sizing: border-box
-	font-size: 62.5%
-	@media (max-width: 992px)
-		font-size: 56.25%
-	@media (max-width: 768px)
-		font-size: 45%
-	
-body
-	font-family: 'Nunito Sans', sans-serif
-	background-color: #ffff
-	font-size: 1.6rem
-	text-rendering: optimizeLegibility
-	box-sizing: border-box
 main 
 	overflow: hidden
 .title-h1
@@ -41,10 +24,12 @@ body
 	background-color: #ffff
 	text-rendering: optimizeLegibility
 	box-sizing: border-box
+	font-size: 16px
 html
 	font-family: Source Sans Pro, sans-serif
 	background-color: #ffff
 	text-rendering: optimizeLegibility
+	font-size: 62.5%
 body
 	&.over-hidden
 		overflow: hidden
@@ -88,7 +73,7 @@ a
 
 .main-title
 	font-size: 36px
-	font-weight: 700
+	font-weight: 600
 	text-transform: uppercase
 	color: map-get($mau, main-b)
 	margin-bottom: 30px
@@ -159,6 +144,20 @@ a
 .cmsadminpanel
 	right: unset
 	left: 0
+.btn-view-more 
+	a
+		padding: 1rem 3rem 
+		background: #ce1b22
+		border-radius: 25px
+		color: #ffffff
+		font-size: 1.8rem 
+		position: relative
+		font-weight: 600
+		img 
+			margin-right: .5rem
+			margin-bottom: .3rem
+			
+
 
 
 .alert-info

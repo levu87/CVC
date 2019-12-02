@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Truyền thông'
+	- var bodyClass = 'Truyen-thong-page'
+
+block main
+	include ../components/_global/banner.pug
+	include ../components/truyen-thong/breadcrumb.pug
+	include ../components/truyen-thong/index
